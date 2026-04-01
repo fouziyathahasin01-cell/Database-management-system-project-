@@ -1,8 +1,17 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <h2>Student Dashboard</h2>
 
-<p>Name: {{data[0]}}</p>
-<p>Class: {{data[1]}}</p>
-<p>Total Fee: {{data[2]}}</p>
-<p>Paid: {{data[3]}}</p>
-<p>Pending: {{data[4]}}</p>
-<p>Due Date: {{data[5]}}</p>
+<p>Name: {{ student.Name }}</p>
+<p>Class: {{ student.class }}</p>
+
+<h3>Payments</h3>
+{% for p in payments %}
+<p>{{ p.Payment_ID }} - {{ p.amount }}</p>
+{% endfor %}
+
+<h3>Fees</h3>
+{% for f in fees %}
+<p>{{ f.Class }} - {{ f.Amount }} - {{ f.Due_Date }}</p>
+{% endfor %}
+
+<a href="/logout">Logout</a>
