@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container box */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #4facfe;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #007bff;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard styling */
+.dashboard {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #4facfe;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Logout button */
+.logout {
+    margin-top: 20px;
+    display: inline-block;
+    background: red;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+.logout:hover {
+    background: darkred;
+}
